@@ -1,0 +1,51 @@
+<ion-header >
+  <ion-toolbar>
+
+
+
+  </ion-toolbar>
+</ion-header>
+<ion-content padding class="gradient-background">
+  <div class="wrapper">
+    <div class="container">
+      <div class="logo">
+     </div>
+
+      <div class= main-container>
+
+        <h1>Registro de tu mascota</h1>
+        <form (ngSubmit)="registro()">
+<ion-item>
+  <ion-icon name= "checkbox-outline" item-start></ion-icon>
+          <ion-label floating>nombre de tu mascota * </ion-label>
+          <br>
+          <ion-input  class="form-control"  name="nombre" required minlength="4" maxlength="18"  type="text" ></ion-input>
+</ion-item>
+<ion-item>
+               <ion-icon name="card"  item-start></ion-icon>
+               <ion-label floating> Edad de  tu mascota *</ion-label>
+                 <br>
+               <ion-input  class="form-control"  name="apellido" required minlength="4" type="number"></ion-input>
+</ion-item >
+
+
+<ion-item>
+  <ion-icon name="card"  item-start></ion-icon>
+  <ion-label floating> raza de tu mascota *</ion-label>
+    <br>
+  <ion-input  class="form-control"  name="correo" required minlength="4" type="text" ></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-icon name="card"  item-start></ion-icon>
+  <ion-label floating> peso mascota KG *</ion-label>
+    <br>
+  <ion-input  class="form-control"  name="clave" required minlength="4" type="password" ></ion-input>
+</ion-item>
+          <button class="button" ion-button >Registrar mascota</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>

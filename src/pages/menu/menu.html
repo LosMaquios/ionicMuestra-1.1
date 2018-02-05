@@ -1,0 +1,46 @@
+<ion-header >
+  <ion-toolbar>
+    <button ion-button menuToggle >
+      <ion-icon name='menu'></ion-icon>
+   menu
+    </button>
+
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-menu   side="left" [content]="contentMain">
+  <ion-content padding>
+    <ion-list>
+      <ion-item >
+        <ion-avatar item-start>
+          <img src="http://i1.mendozapost.com/files/image/7/7142/54b6f4c45797b_1420_!.jpg?s=270345070aa93e05e936c1b6f31c0904&d=1421508947">
+        </ion-avatar>
+        <h2>{{username}}</h2>
+      </ion-item>
+      <ion-list-header>
+        Navegación
+      </ion-list-header>
+      <div *ngFor="let manejoMain of lista.manejoMain">
+      <button ion-item    menuClose  (click)="abrirPagina(manejoMain.navegacion)">
+        <ion-icon   name="{{manejoMain.icono}}"></ion-icon>
+      {{manejoMain.titulo}}
+      </button>
+    </div>
+    <ion-list-header>
+    Perfil
+    </ion-list-header>
+    <div >
+    <button ion-item *ngFor="let perfil of lista.perfil"    menuClose  (click)="abrirPagina(perfil.navegacion)">
+      <ion-icon   name="{{perfil.icono}}"></ion-icon>
+    {{perfil.titulo}}
+    </button>
+  </div>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+
+<ion-nav #contentMain [root]="rootPage"></ion-nav>

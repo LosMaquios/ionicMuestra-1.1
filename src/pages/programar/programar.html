@@ -1,0 +1,36 @@
+
+<ion-content padding class="gradient-background">
+  <div class="wrapper">
+    <div class="container">
+      <div class="logo">
+     </div>
+
+      <div class= main-container>
+
+        <h1>Registro</h1>
+        <form (ngSubmit)="agregar()">
+
+
+          <ion-item>
+            <ion-icon name= "checkbox-outline" item-start></ion-icon>
+            <ion-label floating > Jornada</ion-label>
+            <ion-select class= "ion-select" name="genero-type" >
+              <ion-option value="M">Tarde</ion-option>
+              <ion-option value="H">Mañana</ion-option>
+              <ion-option value="N">Noche</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name= "checkbox-outline" item-start></ion-icon>
+            <ion-label>Horario</ion-label>
+            <ion-datetime displayFormat="hh:mm A" pickerFormat="hh mm A" ></ion-datetime>
+          </ion-item>
+
+          <button class="button" ion-button >Agregar Horario</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</ion-content>
