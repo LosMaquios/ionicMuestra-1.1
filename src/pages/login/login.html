@@ -8,24 +8,25 @@
 
         <h1> Inicio de sesión </h1>
         <form (ngSubmit)="login()">
+<ion-item>
+          <ion-icon name="md-at"  item-start></ion-icon>
 
           <ion-label floating> Ingrese correo electronico*</ion-label>
-          <br>
-          <ion-input  class="form-control"  name="correo" required minlength="4"  type="mail" [(ngModel)]="correo"></ion-input>
-
-               <ion-icon name="card"  item-start></ion-icon>
-               <ion-label floating> Ingrese su clave*</ion-label>
-                 <br>
+            <ion-input  class="form-control"  name="correo" required minlength="4"  type="mail" [(ngModel)]="correo"></ion-input>
+</ion-item>
+<ion-item>
+               <ion-icon name="md-finger-print"  item-start></ion-icon>
+               <ion-label floating>Ingrese su clave*</ion-label>
                <ion-input  class="form-control"  name="identification-number" required minlength="4" type="password" [(ngModel)]="clave"></ion-input>
-
+</ion-item>
 
 <!--Validaciones de texto -->
 
-          <button class="button" ion-button >Acceder</button>
+          <button class="button" id="ingreso" ion-button >Acceder</button>
 
         </form>
 <form (ngSubmit)="registro()">
-  <button class="button" ion-button > registrarse </button>
+  <button class="button" id="registro" ion-button > registrarse </button>
 </form>
       </div>
     </div>

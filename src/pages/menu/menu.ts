@@ -26,7 +26,8 @@ this.correo = navParams.get('correo')
 
 //metodo el cual redireccionara la lista del menu
   abrirPagina(pagina){
-    if(pagina == LoginPage){
+  console.log(pagina)
+    if(pagina == "LoginPage"){
         this.loadingCtrl.create({
         content: 'Cargando',
         dismissOnPageChange: true

@@ -1,4 +1,7 @@
-
+<ion-header >
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
 <ion-content padding class="gradient-background">
   <div class="wrapper">
     <div class="container">
@@ -7,16 +10,16 @@
 
       <div class= main-container>
 
-        <h1>Registro</h1>
+        <h1>Registro Horario de alimentacion</h1>
         <form (ngSubmit)="agregar()">
 
 
           <ion-item>
             <ion-icon name= "checkbox-outline" item-start></ion-icon>
             <ion-label floating > Jornada</ion-label>
-            <ion-select class= "ion-select" name="genero-type" >
-              <ion-option value="M">Tarde</ion-option>
-              <ion-option value="H">Mañana</ion-option>
+            <ion-select class= "ion-select" name="genero-type" [(ngModel)]="jornada" >
+              <ion-option value="T">Tarde</ion-option>
+              <ion-option value="M">Mañana</ion-option>
               <ion-option value="N">Noche</ion-option>
             </ion-select>
           </ion-item>
@@ -24,12 +27,48 @@
           <ion-item>
             <ion-icon name= "checkbox-outline" item-start></ion-icon>
             <ion-label>Horario</ion-label>
-            <ion-datetime displayFormat="hh:mm A" pickerFormat="hh mm A" ></ion-datetime>
+            <ion-datetime displayFormat="hh:mm A" pickerFormat="hh mm A"></ion-datetime>
           </ion-item>
 
-          <button class="button" ion-button >Agregar Horario</button>
 
-        </form>
+        <ion-card>
+  <ion-card-header>
+    Dias
+  </ion-card-header>
+  <ion-card-content>
+    <ion-item>
+      <ion-label>Lunes</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Martes</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Miercoles</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Jueves</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Viernes</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sabado</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label>Domingo</ion-label>
+      <ion-checkbox color="dark" checked="true"></ion-checkbox>
+    </ion-item>
+    </ion-card-content>
+</ion-card>
+<button class="button" ion-button >Agregar Horario</button>
+
+</form>
       </div>
     </div>
   </div>

@@ -21,7 +21,10 @@ constructor(
   }
 
 agregar(){
-
+  let toast =  this._toastCtrl.create ({message:"Se agrego un nuevo horario para alimentar tu mascota",
+  position:"top",
+  duration:3000});
+ toast.present();
 }
 
   }

@@ -1,3 +1,7 @@
+<ion-header>
+  <ion-navbar></ion-navbar>
+</ion-header>
+
 <ion-content padding class="gradient-background">
   <div class="wrapper">
     <div class="container">
@@ -9,13 +13,13 @@
         <h1>Registro</h1>
         <form (ngSubmit)="registro()">
 <ion-item>
-  <ion-icon name= "checkbox-outline" item-start></ion-icon>
+  <ion-icon name= "ios-contact" item-start></ion-icon>
           <ion-label floating>nombre </ion-label>
           <br>
           <ion-input  class="form-control"  name="nombre" required minlength="4" maxlength="18"  type="text" [(ngModel)]="nombre"></ion-input>
 </ion-item>
 <ion-item>
-               <ion-icon name="card"  item-start></ion-icon>
+               <ion-icon name="md-contact"  item-start></ion-icon>
                <ion-label floating> Apellido</ion-label>
                  <br>
                <ion-input  class="form-control"  name="apellido" required minlength="4" type="text" [(ngModel)]="apellido"></ion-input>
@@ -23,7 +27,7 @@
 
 
           <ion-item>
-            <ion-icon name= "checkbox-outline" item-start></ion-icon>
+            <ion-icon name= "ios-contacts" item-start></ion-icon>
             <ion-label floating > Genero </ion-label>
             <ion-select class= "ion-select" name="genero-type" [(ngModel)]="genero">
               <ion-option value="M">Mujer</ion-option>
@@ -32,27 +36,27 @@
           </ion-item>
 
 <ion-item>
-  <ion-icon name="card"  item-start></ion-icon>
+  <ion-icon name="ios-at"  item-start></ion-icon>
   <ion-label floating> Correo</ion-label>
     <br>
-  <ion-input  class="form-control"  name="correo" required minlength="4" type="email" ></ion-input>
+  <ion-input  class="form-control"  name="correo" required minlength="4" type="email" [(ngModel)]="correo"></ion-input>
 </ion-item>
 
 <ion-item>
-  <ion-icon name="card"  item-start></ion-icon>
+  <ion-icon name="md-key"  item-start></ion-icon>
   <ion-label floating> clave</ion-label>
     <br>
-  <ion-input  class="form-control"  name="clave" required minlength="4" type="password" ></ion-input>
+  <ion-input  class="form-control"  name="clave" required minlength="4" type="password"  [(ngModel)]="clave"></ion-input>
 </ion-item>
 
 <ion-item>
-  <ion-icon name="card"  item-start></ion-icon>
+  <ion-icon name="md-key"  item-start></ion-icon>
   <ion-label floating>Ingresa nuevamente la clave</ion-label>
     <br>
   <ion-input  class="form-control"  name="claveS" required minlength="4" type="password" [(ngModel)]="claveS"></ion-input>
 </ion-item>
 
-          <button class="button" ion-button >Acceder</button>
+          <button class="button" ion-button >Registrarse</button>
 
         </form>
       </div>

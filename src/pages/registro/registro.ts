@@ -25,9 +25,9 @@ constructor(
   ) {}
 
   registro(){
-    console.log("se logro registrar el usuario")
+    console.log(this.clave +" :: "+ this.claveS)
 if(this.clave == this.claveS){
-let registroUsuario:Array<string> = [this.nombre,this.apellido,this.genero,this.correo , this.clave];
+let registroUsuario:any = [this.nombre,this.apellido,this.genero,this.correo , this.clave];
 localStorage.setItem(this.correo, registroUsuario);
  this._navCtrl.push(MenuPage,{nombre:this.nombre , apellido:this.apellido,correo:this.correo });
  let toast =  this._toastCtrl.create ({message:"Se ha registrado satisfactoriamente",

@@ -16,36 +16,77 @@
         <h1>Registro de tu mascota</h1>
         <form (ngSubmit)="registro()">
 <ion-item>
-  <ion-icon name= "checkbox-outline" item-start></ion-icon>
+  <ion-icon name= "md-paw" item-start></ion-icon>
           <ion-label floating>nombre de tu mascota * </ion-label>
-          <br>
           <ion-input  class="form-control"  name="nombre" required minlength="4" maxlength="18"  type="text" ></ion-input>
 </ion-item>
 <ion-item>
-               <ion-icon name="card"  item-start></ion-icon>
+               <ion-icon name="ios-paw-outline"  item-start></ion-icon>
                <ion-label floating> Edad de  tu mascota *</ion-label>
-                 <br>
                <ion-input  class="form-control"  name="apellido" required minlength="4" type="number"></ion-input>
 </ion-item >
 
 
 <ion-item>
-  <ion-icon name="card"  item-start></ion-icon>
+  <ion-icon name="logo-octocat"  item-start></ion-icon>
   <ion-label floating> raza de tu mascota *</ion-label>
-    <br>
-  <ion-input  class="form-control"  name="correo" required minlength="4" type="text" ></ion-input>
+    <ion-input  class="form-control"  name="correo" required minlength="4" type="text" ></ion-input>
 </ion-item>
 
+
+          <ion-item>
+            <ion-icon name= "ios-contacts" item-start></ion-icon>
+            <ion-label floating > Tipo de mascota </ion-label>
+            <ion-select class= "ion-select" name="genero-type" [(ngModel)]="genero">
+              <ion-option value="Perro">Perro</ion-option>
+              <ion-option value="Gato">Gato</ion-option>
+            </ion-select>
+          </ion-item>
+
 <ion-item>
-  <ion-icon name="card"  item-start></ion-icon>
+  <ion-icon name="ios-nutrition"  item-start></ion-icon>
   <ion-label floating> peso mascota KG *</ion-label>
-    <br>
-  <ion-input  class="form-control"  name="clave" required minlength="4" type="password" ></ion-input>
+    <ion-input  class="form-control"  name="clave" required minlength="4" type="password" ></ion-input>
 </ion-item>
           <button class="button" ion-button >Registrar mascota</button>
 
         </form>
+
+        <div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="kittens">
+      Perros que tienes
+    </ion-segment-button>
+    <ion-segment-button value="puppies">
+      Gatos que tienes
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'puppies'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-puppy-1.jpg">
+      </ion-thumbnail>
+      <h2>Ruby</h2>
+    </ion-item>
+    ...
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'kittens'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-kitten-1.jpg">
+      </ion-thumbnail>
+      <h2>Luna</h2>
+    </ion-item>
+    ...
+  </ion-list>
+</div>
       </div>
+
+
     </div>
   </div>
 </ion-content>
