@@ -1,8 +1,8 @@
-<ion-content padding class="gradient-background">
+<ion-content padding class="gradient-background" style="background-image: url(assets/imgs/pexels-photo-221562.jpeg);
+background-size: cover;
+background-position: center;">
   <div class="wrapper">
-    <div class="container">
-      <div class="logo">
-     </div>
+
 
       <div class= main-container>
 
@@ -21,14 +21,15 @@
 </ion-item>
 
 <!--Validaciones de texto -->
-
+<br><br>
           <button class="button" id="ingreso" ion-button >Acceder</button>
 
+<br>
         </form>
 <form (ngSubmit)="registro()">
   <button class="button" id="registro" ion-button > registrarse </button>
 </form>
+<a (click)="recuperar()"> ¿Recuperar contraseña? </a>
       </div>
     </div>
-  </div>
-</ion-content>
+  </ion-content>

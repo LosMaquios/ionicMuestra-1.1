@@ -1,13 +1,11 @@
-<ion-header>
+<ion-header class="header">
   <ion-navbar></ion-navbar>
-</ion-header>
+</ion-header >
 
-<ion-content padding class="gradient-background">
+<ion-content padding class="gradient-background" style="  background-image: url(./assets/imgs/pexels-photo-233318.jpeg) ;
+  background-size: cover;
+  background-position: center;">
   <div class="wrapper">
-    <div class="container">
-      <div class="logo">
-     </div>
-
       <div class= main-container>
 
         <h1>Registro</h1>
@@ -55,11 +53,12 @@
     <br>
   <ion-input  class="form-control"  name="claveS" required minlength="4" type="password" [(ngModel)]="claveS"></ion-input>
 </ion-item>
+<br>
 
           <button class="button" ion-button >Registrarse</button>
 
         </form>
       </div>
     </div>
-  </div>
+
 </ion-content>

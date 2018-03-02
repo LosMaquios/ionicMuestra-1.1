@@ -1,11 +1,16 @@
 page-registrar{
 
+  background-image: url("../assets/imgs/pexels-photo-276092.jpeg") ;
+  background-size: cover;
+  background-position: center;
+
 div.wrapper {
 
     width: 320px;
     position:  relative;
     top: 20px;
     right: 7px;
+    opacity: 0.94;
 
 
 }
@@ -15,7 +20,6 @@ div.main-container
     -webkit-box-shadow: 2px 3px 15px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 2px 3px 15px 2px rgba(0,0,0,0.75);
     box-shadow: 2px 3px 15px 2px rgba(0,0,0,0.75);
-    background-color: white;
     z-index: 2;
 
     width: 340px;
@@ -32,8 +36,5 @@ div.main-container
       color: #808080;
   }
   }
-  div.scroll-content{
-    background-color: #427feb;
 
-  }
 }
