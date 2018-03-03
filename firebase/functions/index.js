@@ -7,6 +7,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const app = express()
+const config = functions.config()
 
 app.use(cors())
 app.use(bodyParser.json())
@@ -15,8 +16,8 @@ app.post('/', ({ body }, response) => {
   const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'raan.v98@gmail.com',
-      pass: 'clubatleticonacional2015'
+      user: config.email.user,
+      pass: config.email.pass
     }
   })
 
