@@ -1,6 +1,8 @@
 # ionicMuestra-1.1
+  
 Este proyecto, es una de muestra del trabajo en ionic 
-<div class="container">
-<h1>Pagina para generar iconos y splash: <h1>
-<p>https://apetools.webprofusion.com/app/#/tools/imagegorilla<p>
-  </div>
+
+# Programa para generar iconos y splash
+Este programa me permite generar todos los tamamos de imagenes y iconos para poder agregarlos al resources y sus respectivas plataformas 
+Para poder ver las rutas es en el archivo config.
+[ hacer click](https://apetools.webprofusion.com/app/#/tools/imagegorilla)
