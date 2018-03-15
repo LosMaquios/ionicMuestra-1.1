@@ -26,10 +26,11 @@ background-position: center;">
 
 <br>
         </form>
-<form (ngSubmit)="registro()">
-  <button class="button" id="registro" ion-button > registrarse </button>
-</form>
+
+  <button class="button" id="registro" (click)="registro()" ion-button > registrarse </button>
+<div class="recupearClave">
 <a (click)="recuperar()"> ¿Recuperar contraseña? </a>
-      </div>
+</div>    
+</div>
     </div>
   </ion-content>
