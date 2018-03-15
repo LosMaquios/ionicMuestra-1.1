@@ -8,7 +8,6 @@ Para poder ver las rutas es en el archivo config.xml.
 <br>
 [ hacer click para ir al programa](https://apetools.webprofusion.com/app/#/tools/imagegorilla)
 
-# Problemas Error:EACCES: permission denied, mkdir '/home/rmartinez@CX.COL/codigo/ionic-/node_modules/node-sass/build'
-
+# Problemas Error:EACCES: permission denied, mkdir node_modules/node-sass/build
 sudo npm i gulp-sass -ES --unsafe-perm=true
 
