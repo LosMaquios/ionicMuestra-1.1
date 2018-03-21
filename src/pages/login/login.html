@@ -1,36 +1,33 @@
-<ion-content padding class="gradient-background" style="background-image: url(assets/imgs/pexels-photo-221562.jpeg);
-background-size: cover;
-background-position: center;">
+<ion-content padding class="gradient-background" >
+<div class="imageBackground" >
+ 
+</div>
   <div class="wrapper">
-
-
-      <div class= main-container>
-
         <h1> Inicio de sesión </h1>
         <form (ngSubmit)="login()">
-<ion-item>
+<ion-item class="inputContainer">
           <ion-icon name="md-at"  item-start></ion-icon>
 
           <ion-label floating> Ingrese correo electronico*</ion-label>
             <ion-input  class="form-control"  name="correo" required minlength="4"  type="mail" [(ngModel)]="correo"></ion-input>
 </ion-item>
-<ion-item>
+<ion-item class="inputContainer">
                <ion-icon name="md-finger-print"  item-start></ion-icon>
                <ion-label floating>Ingrese su clave*</ion-label>
                <ion-input  class="form-control"  name="identification-number" required minlength="4" type="password" [(ngModel)]="clave"></ion-input>
 </ion-item>
-
-<!--Validaciones de texto -->
+<!--Botones de ingresp a la aplicación -->
 <br><br>
-          <button class="button" id="ingreso" ion-button >Acceder</button>
+<button class="button" id="ingreso" ion-button >Acceder</button>
 
 <br>
-        </form>
+</form>
 
-  <button class="button" id="registro" (click)="registro()" ion-button > registrarse </button>
-<div class="recupearClave">
+<button class="button" id="registro" (click)="registro()" ion-button > registrarse </button>
+
+<div class="recuperarClave">
 <a (click)="recuperar()"> ¿Recuperar contraseña? </a>
 </div>    
+
 </div>
-    </div>
-  </ion-content>
+</ion-content>
