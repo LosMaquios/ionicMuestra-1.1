@@ -48,7 +48,7 @@ if(autenticacion != null){
 console.log(autenticacion)
 if(autenticacion == null){
   let toast =  this._toastCtrl.create ({message:"Este usuario no se encuentra registrado",
-  position:"top",
+  position:"button",
   duration:3000});
  toast.present();
 }
