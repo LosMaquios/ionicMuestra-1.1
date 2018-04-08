@@ -1,6 +1,6 @@
 // Vendor
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController,LoadingController } from 'ionic-angular';
+import {ToastController } from 'ionic-angular';
 
 //pagina
 
@@ -13,10 +13,8 @@ export class ProgramarPage {
 jornada;
 horario;
 constructor(
-    private _navCtrl: NavController,
     private _toastCtrl : ToastController,
-    private _loadingCtrl: LoadingController,
-  )
+    )
   {
   }
 

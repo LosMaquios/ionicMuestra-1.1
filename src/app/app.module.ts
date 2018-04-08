@@ -10,7 +10,6 @@ import { LoginPage} from '../pages/login/login';
 import { RegistroPage} from '../pages/registro/registro';
 import { MenuPage} from '../pages/menu/menu';
 import { ProgramarPage} from '../pages/programar/programar';
-import { PerfilPage} from '../pages/perfil/perfil';
 import { ActualPage } from '../pages/actual/actual';
 import { HomePage} from '../pages/home/home';
 import {RegistrarPage} from '../pages/registrar/registrar';
@@ -29,7 +28,6 @@ import {LogeoService} from '../services/logeo.service'
     RegistroPage,
     MenuPage,
     ProgramarPage,
-    PerfilPage,
     ActualPage ,
     HomePage,
     RegistrarPage,
@@ -48,7 +46,6 @@ import {LogeoService} from '../services/logeo.service'
     RegistroPage,
     MenuPage,
     ProgramarPage,
-    PerfilPage,
     ActualPage ,
     HomePage,
     RegistrarPage,
