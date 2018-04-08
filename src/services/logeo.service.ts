@@ -20,4 +20,11 @@ return this._http.post("https://us-central1-ionic1-42d1d.cloudfunctions.net/send
   	"message":"<table><tr><td><h1>Recuperar tu contraseña</h1></td></tr><tr><td><p>Para poder recupear su contraseña ingrese el siguiente codigo "+codigo+"</p></td></tr><tr><td><strong>Pets app in socity C&A LTDA </strong></td></tr></table>",
 }).toPromise()
   }
+
+  ip(ip):Promise<any>{
+  
+    return this._http.get("http://"+ip+"/?sr1=180",{
+
+    }).toPromise();
+  }
 }

@@ -11,6 +11,17 @@
      </div>
 
 
-        <h1>Bienvenido</h1>
+   <form (ngSubmit)="peticion()">
+    <ion-item class="inputContainer">
+      <ion-icon name="md-at"  item-start></ion-icon>
+
+      <ion-label floating>Registrar componente</ion-label>
+        <ion-input  class="form-control"  name="correo" required minlength="4"  type="text" [(ngModel)]="ip"></ion-input>
+</ion-item>
+
+<button class="button" id="ingreso" ion-button >Acceder</button>
+
+   </form>
+
 
 </ion-content>

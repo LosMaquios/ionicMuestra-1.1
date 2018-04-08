@@ -5,13 +5,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 import { LoginPage} from '../pages/login/login'
+import {MenuPage} from '../pages/menu/menu'
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = MenuPage;
 
   pages: Array<{title: string, component: any}>;
 
