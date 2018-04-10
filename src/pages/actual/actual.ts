@@ -1,6 +1,6 @@
 // Vendor
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController,LoadingController } from 'ionic-angular';
+import { } from 'ionic-angular';
 
 //pagina
 
@@ -12,9 +12,7 @@ import { IonicPage, NavController, NavParams, ToastController,LoadingController 
 export class ActualPage {
 
 constructor(
-    private _navCtrl: NavController,
-    private _toastCtrl : ToastController,
-    private _loadingCtrl: LoadingController,
+   
 
   ) {}
 

@@ -1,6 +1,6 @@
 // Vendor
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, ToastController,LoadingController } from 'ionic-angular';
+import {  NavController, NavParams, ToastController} from 'ionic-angular';
 
 //pagina
 import {LoginPage} from '../login/login';
@@ -17,7 +17,6 @@ clave:any;
 constructor(
     private _navCtrl: NavController,
     private _toastCtrl : ToastController,
-    private _loadingCtrl: LoadingController,
    private navParams: NavParams,
   ) {
  this.codigo = navParams.get('codigo');
