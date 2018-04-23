@@ -8,9 +8,6 @@ import {MenuPage} from '../menu/menu'
 import {LogeoService} from '../../services/logeo.service'
 import {RecuperarPage} from '../recuperar/recuperar'
 
-
-@IonicPage()
-
 @Component({
   selector: 'page-login',
   templateUrl: 'login.html',
@@ -47,13 +44,9 @@ if(autenticacion != null){
 }
 console.log(autenticacion)
 if(autenticacion == null){
-  let toast =  this._toastCtrl.create ({message:"Este usuario no se encuentra registrado",
-  position:"button",
-  duration:3000});
- toast.present();
-}
+  (this._toastCtrl as any ).showerror("Sr usuario no se encuentra registrado")
+  }
     }
-
 
 registro(){
   console.log("ingreso")
